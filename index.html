@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="./src/app.css">
+
+<title>Keypad5 by borma</title>
+
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="overlay"></div>
+
+  
+  <section class="absolute w-full h-full overflow-hidden">
+    <div class='leaf'>
+      <div> <span style="font-size: 45px;color:green">.</span> </div>
+      <div> <span style="font-size: 45px;color:green">.</span> </div>
+      <div> <span style="font-size: 45px;color:green">.</span> </div>
+      <div> <span style="font-size: 45px;color:green">.</span> </div>
+      <div> <span style="font-size: 45px;color:green">.</span> </div>
+      <div> <span style="font-size: 45px;color:green">.</span> </div>
+
+    </div>
+    <div class='leaf1'>
+      <div> <span style="font-size: 45px;color:red">.</span> </div>
+      <div> <span style="font-size: 45px;color:red">.</span> </div>
+      <div> <span style="font-size: 45px;color:red">.</span> </div>
+      <div> <span style="font-size: 45px;color:red">.</span> </div>
+      <div> <span style="font-size: 45px;color:red">.</span> </div>
+      <div> <span style="font-size: 45px;color:red">.</span> </div>
+
+    </div>
+
+</section>
+
+<h1>Hello World to Keypad5 game</h1>
+
+<div id="parent">
+    <div class="message" data-key-words="linux">linux</div>
+    <div class="message" data-key-words="hello">hello</div>
+    <div class="message" data-key-words="language">language</div>
+    <div class="message" data-key-words="tools">tools</div>
+    <div class="message" data-key-words="water">water</div>
+
+</div>
+
+
+
+
+<div class="termpad">
+
+<div>
+
+<h2>Score: <span id="score"></span> </h2>
+
+<input
+    id="primaryInput"
+    oninput="myInputKeys(this.value)"
+    type="text"
+    value=""
+    placeholder="input you see">
+
+</div>
+
+
+
+
+
+<div>
+<h2>Missed: </h2>
+
+<h3 id="badscore">1 </h3>
+
+</div>
+
+
+
+
+<audio controls autoplay>
+  <source src="./src/sound.mp3" type="audio/ogg">
+  <source src="./src/sound.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+
+</div>
+
+
+<script src="./src/app.js"></script>
+
+
+
+
+</body>
+</html>
